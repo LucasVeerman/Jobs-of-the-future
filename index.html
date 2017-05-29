@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/slide11.css">-->
+
+
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--Slide 1-->
+            <div class="swiper-slide" id="1">
+               
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <div id="background1">
+                    <p id="demo">
+                        Financi&#235;le crisis
+                    </p>
+                </div>
+                
+
+            </div>
+            <!--Slide 2-->
+            <div class="swiper-slide" id="2">
+
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <img src="img/image2.jpg" alt="Image slide 6" class="swiper-lazy">
+
+            </div>
+            <!--Slide 4-->
+            <div class="swiper-slide" id="4">
+
+                <img src="img/image4.jpg" alt="Image slide 6" class="swiper-lazy">
+                <p id="demo2">
+                    Het gaat beter met de economie
+                </p>
+
+
+            </div>
+            <div class="swiper-slide" id="5">
+
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <img src="img/image5_3.png" alt="Image slide 6" class="swiper-lazy">
+
+            </div>
+            <!--Slide 6-->
+            <div class="swiper-slide" id="6">
+               
+                <img src="img/image6_1.jpg" alt="Image slide 6" class="swiper-lazy">
+                <div class="slider close"></div>
+
+            
+            </div>
+            <!--Slide 7-->
+            <div class="swiper-slide" id="7">
+
+                <img src="img/image7_1.jpg" alt="Image slide 7" class="swiper-lazy">
+
+            </div>
+            <div class="swiper-slide" id="8">
+                <div id="ad-3">
+                    <div id="kaas">
+                        <ul id="row3">
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Slide 10-->
+            <div class="swiper-slide" id="10">
+
+                <input type="button" value="vooruit" id="backbutton"/>
+                <input type="button" value="terug" id="forwardbutton"/>
+                <img src ="images/voorkant.png" id="slide" width="150" height="150" />
+                <img src ="images/voorkant.png" id="slide2" width="150" height="150" />
+                <img src ="images/voorkant.png" id="slide3" width="150" height="150" />
+                <img src ="images/voorkant.png" id="slide4" width="150" height="150" />
+
+            </div>
+            <!--Slide 11-->
+            <div class="swiper-slide" id="11">
+
+                <div id="ad-1">
+
+                <ul id="row">
+                    <li>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            </div>
+            <!--Slide 12-->
+            <div class="swiper-slide" id="12">
+
+                <div id="ad-2">
+
+                    <ul id="boat">
+                        <li>
+                        </li>
+                    </ul>
+                    <ul id="man2">
+                        <li>
+                        </li>
+                    </ul>
+                    <ul id="man3">
+                        <li>
+                        </li>
+                    </ul>
+                    <ul id="man4">
+                        <li>
+                        </li>
+                    </ul>
+                    <ul id="man5">
+                        <li>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Navigation -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // Disable preloading of all images
+        preloadImages: false,
+        // Enable lazy loading
+        lazyLoading: true
+    });
+    </script>
+</body>
+</html>

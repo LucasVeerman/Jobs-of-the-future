@@ -1,0 +1,111 @@
+@keyframes our-fade-in-animation {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+div {
+	opacity: 1;
+	animation: our-fade-in-animation 1s 1;
+}
+
+#ad-1 {
+	height: 100%;
+	width: 100%;
+    margin-top: -20px;
+	float: left;
+    margin-left: -10px;
+    background-image: url(../img/image11_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+#ad-1 ul#row {
+	width: 3000px;
+	height: 600px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	left: 1500px;
+	overflow: visible;
+	animation: boat-in-animation 40s 1 ease-out; 
+}
+#ad-1 ul#row li {
+	width: 50.5%;
+	height: 52%;
+	background-image: url(../img/image8_2.png);
+    background-size: cover;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: visible;
+    list-style: none;
+}
+
+
+@keyframes boat-in-animation {
+	0%   {left: 400px;}
+	2%   {left: 300px;}
+	4%   {left: 300px;}
+	6%   {left: 200px;}
+	8%   {left: 200px;}
+	10%   {left: 100px;}
+	12%   {left: 100px;}
+	14%   {left: 0px;}
+	16%   {left: 0px;}
+	18%   {left: -100px;}
+	20%   {left: -100px;}
+	22%   {left: -200px;}
+	24%   {left: -200px;}
+	26%   {left: -300px;}
+	28%   {left: -300px;}
+	30%   {left: -400px;}
+	32%   {left: -400px;}
+	34%   {left: -500px;}
+	36%   {left: -500px;}
+	38%   {left: -600px;}
+	40%   {left: -600px;}
+	42%   {left: -700px;}
+	44%   {left: -700px;}
+	46%   {left: -800px;}
+	48%   {left: -800px;}
+	50%   {left: -900px;}
+	52%   {left: -900px;}
+	54%   {left: -1000px;}
+	56%   {left: -1000px;}
+	58%   {left: -1100px;}
+	60%   {left: -1100px;}
+	62%   {left: -1200px;}
+	64%   {left: -1200px;}
+	66%   {left: -1300px;}
+	68%   {left: -1300px;}
+	70%   {left: -1400px;}
+	72%   {left: -1400px;}
+
+    /*74%   {left: -1500px;}*/
+    /*76%   {left: -1500px;}*/
+    /*78%   {left: -1600px;}*/
+    /*80%   {left: -1600px;}*/
+    /*82%   {left: -1700px;}*/
+    /*84%   {left: -1700px;}*/
+    /*86%   {left: -1800px;}*/
+    /*88%   {left: -1800px;}*/
+    /*90%   {left: -1900px;}*/
+    /*92%   {left: -1900px;}*/
+    /*94%   {left: -2000px;}*/
+    /*96%   {left: -2000px;}*/
+    /*98%   {left: -2100px;}*/
+    /*100%   {left: -2100px;}*/
+    /*102%   {left: -2200px;}*/
+    /*104%   {left: -2200px;}*/
+    /*106%   {left: -2300px;}*/
+    /*108%   {left: -2300px;}*/
+    /*110%   {left: -2400px;}*/
+    /*112%   {left: -2400px;}*/
+    /*114%   {left: -2500px;}*/
+    /*116%   {left: -2500px;}*/
+
+    100% {left: -2000px;}
+}

@@ -1,0 +1,96 @@
+@keyframes our-fade-in-animation {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+div {
+	opacity: 1;
+	animation: our-fade-in-animation 1s 1;
+}
+
+#ad-3 {
+	width: calc( 100% + 20px );
+    height: 400px;
+    margin-top: -20px;
+	float: left;
+    margin-left: -10px;
+	background-image: url(../img/image8_1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+#kaas{
+	margin-left:144px;
+	overflow: hidden;
+	position:relative;
+	height:450px;
+	width:2000px;
+
+}
+#ad-3 ul#row3 {
+	width: 3000px;
+	height: 600px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0px;
+	left: -2000px;
+	overflow: hidden;
+	animation: boat-in-animation 40s 1 ease-out; 
+}
+#ad-3 ul#row3 li {
+	width: 50.5%;
+	height: 52%;
+	background-image: url(../img/image8_2.png);
+    background-size: cover;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	overflow: visible;
+    list-style: none;
+}
+
+
+@keyframes boat-in-animation {
+	0%   {left: 400px;}
+	2%   {left: 300px;}
+	4%   {left: 300px;}
+	6%   {left: 200px;}
+	8%   {left: 200px;}
+	10%   {left: 100px;}
+	12%   {left: 100px;}
+	14%   {left: 0px;}
+	16%   {left: 0px;}
+	18%   {left: -100px;}
+	20%   {left: -100px;}
+	22%   {left: -200px;}
+	24%   {left: -200px;}
+	26%   {left: -300px;}
+	28%   {left: -300px;}
+	30%   {left: -400px;}
+	32%   {left: -400px;}
+	34%   {left: -500px;}
+	36%   {left: -500px;}
+	38%   {left: -600px;}
+	40%   {left: -600px;}
+	42%   {left: -700px;}
+	44%   {left: -700px;}
+	46%   {left: -800px;}
+	48%   {left: -800px;}
+	50%   {left: -900px;}
+	52%   {left: -900px;}
+	54%   {left: -1000px;}
+	56%   {left: -1000px;}
+	58%   {left: -1100px;}
+	60%   {left: -1100px;}
+	62%   {left: -1200px;}
+	64%   {left: -1200px;}
+	66%   {left: -1300px;}
+	68%   {left: -1300px;}
+	70%   {left: -1400px;}
+	72%   {left: -1400px;}
+	74%   {left: -1500px;}
+	76%   {left: -1500px;}
+    100% {left: -2000px;}
+}

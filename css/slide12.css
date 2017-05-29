@@ -1,0 +1,234 @@
+@keyframes our-fade-in-animation {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+div {
+    opacity: 1; /* This div is visible by default */
+    animation: our-fade-in-animation 1s 1;
+}
+#ad-2 {
+    width: 100.9%;
+    height: 470px;
+    margin-top: -150px;
+    float: left;
+    margin-left: -10px;
+    background-image: url(../img/image12_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 6px #000;
+}
+
+
+#ad-2 ul#boat {
+    width: 300px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    overflow: visible;
+    animation: boat-in-animation 4s 1 ease-out; /* Slides the group in when ad starts */
+}
+#ad-2 ul#boat li {
+    width: 50.5%;
+    height: 50%;
+    background-image: url(../img/image12_03.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: visible;
+    animation: boat-animation 2s infinite ease-in-out;
+    list-style: none;/*
+    Simulate the boat bobbing on the water - similar to the animation already used on the water itself. */
+}
+
+
+#ad-2 ul#man2 {
+    width: 410px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    bottom: 25px;
+    left: 500px;
+    overflow: visible;
+    animation: boat-in-animation2 5s 1 ease-out; /* Slides the group in when ad starts */
+}
+#ad-2 ul#man2 li {
+    width: 50.5%;
+    height: 50%;
+    background-image: url(../img/image12_05.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: visible;
+    animation: boat-animation2 2s infinite ease-in-out;
+    list-style: none;/*
+    Simulate the boat bobbing on the water - similar to the animation already used on the water itself. */
+}
+
+#ad-2 ul#man3 {
+    width: 300px;
+    height: 350px;
+    z-index: 2;
+    position: absolute;
+    bottom: 25px;
+    left: 300px;
+    overflow: visible;
+    animation: boat-in-animation3 3s 1 ease-out; /* Slides the group in when ad starts */
+}
+#ad-2 ul#man3 li {
+    width: 50.5%;
+    height: 50%;
+    background-image: url(../img/image12_04.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: visible;
+    animation: boat-animation3 2s infinite ease-in-out;
+    list-style: none;/*
+    Simulate the boat bobbing on the water - similar to the animation already used on the water itself. */
+}
+
+#ad-2 ul#man4 {
+    width: 300px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    bottom: 80px;
+    left: 200px;
+    overflow: visible;
+    animation: boat-in-animation4 3s 1 ease-out; /* Slides the group in when ad starts */
+}
+#ad-2 ul#man4 li {
+    width: 50.5%;
+    height: 50%;
+    background-image: url(../img/image12_02.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: visible;
+    animation: boat-animation4 2s infinite ease-in-out;
+    list-style: none;/*
+    Simulate the boat bobbing on the water - similar to the animation already used on the water itself. */
+}
+
+#ad-2 ul#man5 {
+    width: 340px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    bottom: 80px;
+    left: 700px;
+    overflow: visible;
+    animation: boat-in-animation5 6s 1 ease-out; /* Slides the group in when ad starts */
+}
+#ad-2 ul#man5 li {
+    width: 50.5%;
+    height: 50%;
+    background-image: url(../img/image12_01.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: visible;
+    animation: boat-animation4 2s infinite ease-in-out;
+    list-style: none;/*
+    Simulate the boat bobbing on the water - similar to the animation already used on the water itself. */
+}
+
+
+
+
+
+/* An animation with a simulated delay used to fade in multiple elements. We've achieved a simulated delay by starting the fade in process 80% of the way through the animation (instead of starting the process immediately). We can use this technique and increase the animation duration on any element to reach the desired delay duration: */
+
+@keyframes delayed-fade-animation {
+    0%   {opacity: 0;}
+    80%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+/* This is as basic as an animation gets. Only two keyframes and no simulated delay. This animation slides the boat in from the left when the ad begins: */
+
+@keyframes boat-in-animation {
+    0%   {left: 2000px;}
+    100% {left: 20px;}
+}
+
+@keyframes boat-in-animation2 {
+    0%   {left: 2000px;}
+    100% {left: 500px;}
+}
+
+@keyframes boat-in-animation3 {
+    0%   {left: 2000px;}
+    100% {left: 300px;}
+}
+
+@keyframes boat-in-animation4 {
+    0%   {left: 2000px;}
+    100% {left: 200px;}
+}
+
+@keyframes boat-in-animation5 {
+    0%   {left: 2000px;}
+    100% {left: 700px;}
+}
+
+/* Here's our really cool cloud animation. The first group of clouds will start off aligned in the center with the second group off to the right of the screen. While the left group of clouds is sliding off the screen to the left, the right group will begin to appear on the right side of the screen. As soon as the left group is completely off the screen, the clouds will reset (very quickly) to their original positions and repeat: */
+
+
+/* These last 3 animations are all basically the same - the only difference being the position of each element. They will emulate the bobbing effect of an ocean: */
+
+@keyframes boat-animation {
+    0%   {bottom: 0px; left: 0px;}
+    25%  {bottom: -2px; left: -2px;}
+    70%  {bottom: 2px; left: -4px;}
+    100% {bottom: -1px; left: 0px;}
+}
+
+@keyframes boat-animation2 {
+    0%   {bottom: -2px; left: 0px;}
+    25%  {bottom: 2px; left: -2px;}
+    70%  {bottom: -1px; left: -4px;}
+    100% {bottom: 0px; left: 0px;}
+}
+
+@keyframes boat-animation3 {
+0%   bottom: 2px; left: 0px;
+25%  {bottom: -1px; left: -2px;}
+70%  {bottom: 0px; left: -4px;}
+100% {bottom: -2px; left: 0px;}
+}
+
+@keyframes boat-animation4 {
+    0%   {bottom: -1px; left: 0px;}
+    25%  {bottom: 0px; left: -2px;}
+    70%  {bottom: -2px; left: -4px;}
+    100% {bottom: 2px; left: 0px;}
+}
+
+
+@keyframes water-back-animation {
+    0%   {bottom: 10px; left: -20px;}
+    25%  {bottom: 8px; left: -22px;}
+    70%  {bottom: 12px; left: -24px;}
+    100% {bottom: 9px; left: -20px;}
+}
+@keyframes water-front-animation {
+    0%   {bottom: -70px; left: -30px;}
+    25%  {bottom: -68px; left: -32px;}
+    70%  {bottom: -72px; left: -34px;}
+    100% {bottom: -69px; left: -30px;}
+}
+
+
